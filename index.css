@@ -196,6 +196,24 @@ svg {
   background-color: #BFD2F8;
   color: #00B1B1;
 }
+.e-link--arrow-style {
+  color: #159EEC;
+  padding: 10px;
+}
+.e-link--arrow-style:hover .e-link--easy-btn {
+  stroke: #00B1B1;
+}
+.e-link--easy-btn {
+  max-width: 10px;
+  max-height: 10px;
+  margin-left: 10px;
+  stroke: #1F2B6C;
+}
+.e-link--btn-profile {
+  fill: #BFD2F8;
+  display: flex;
+  align-items: center;
+}
 .e-link--burger-icon {
   display: none;
 }
@@ -275,6 +293,57 @@ svg {
 .e-item-goals__svg {
   max-width: 50px;
   max-height: 50px;
+}
+
+.e-item-doctor {
+  min-height: 540px;
+  max-width: 317px;
+}
+.e-item-doctor__wrapper {
+  border-radius: 3px;
+  z-index: 2;
+}
+.e-item-doctor__img {
+  max-height: 350px;
+  max-width: 317px;
+}
+.e-item-doctor__text {
+  background-color: #BFD2F8;
+  text-align: center;
+  color: #1F2B6C;
+  padding: 25px 0;
+}
+.e-item-doctor__name {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.e-item-doctor__speciality {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.e-item-doctor__social-link {
+  justify-content: center;
+  display: flex;
+}
+.e-item-doctor__link {
+  background-color: #1F2B6C;
+  border-radius: 50%;
+  margin: 0 10px;
+  padding: 6px;
+  height: 24px;
+  width: 24px;
+}
+.e-item-doctor__btn {
+  background-color: #1F2B6C;
+  color: #BFD2F8;
+  text-align: center;
+  display: block;
+  padding: 12px 0;
 }
 
 .c-banner__contact {
@@ -436,16 +505,66 @@ svg {
 
 .c-section-great-place {
   min-width: 625px;
+  text-align: center;
 }
 .c-section-great-place__description {
-  margin: 115px 0 60px;
+  margin: 115px auto 60px;
   max-width: 660px;
+}
+.c-section-great-place__subtitle {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #159EEC;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.c-section-great-place__title {
+  font-family: "yeseva-one-regular", cursive;
+  font-size: 32px;
+  line-height: 37px;
+  margin-bottom: 15px;
+  color: #1F2B6C;
+}
+.c-section-great-place__text {
+  margin-bottom: 20px;
+}
+.c-section-great-place__btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+  justify-content: center;
 }
 .c-section-great-place__img {
   background-image: url(./assets/images/Blackdoctors1.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.c-section-our-doctors {
+  min-height: 850px;
+}
+.c-section-our-doctors__text {
+  text-align: center;
+  margin: 65px 0;
+}
+.c-section-our-doctors__sub-title {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #159EEC;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.c-section-our-doctors__title {
+  font-family: "yeseva-one-regular", cursive;
+  font-size: 32px;
+  line-height: 37px;
+  color: #1F2B6C;
 }
 
 @-webkit-keyframes box-shadow-block {

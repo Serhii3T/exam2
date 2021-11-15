@@ -27,6 +27,28 @@
     }
   }
 
+  &--arrow-style {
+    color: $c-secondary;
+    padding: 10px;
+
+    &:hover .e-link--easy-btn {
+      stroke: $c-turquoise;
+    }
+  }
+
+  &--easy-btn {
+    max-width: 10px;
+    max-height: 10px;
+    margin-left: 10px;
+    stroke: #1F2B6C;
+  }
+
+  &--btn-profile {
+    fill: $c-accent;
+    display: flex;
+    align-items: center;
+  }
+
   // &--nav-style {
   //   color: $c-black;
   //   font-family: $f-raleway-bold;
@@ -42,6 +64,8 @@
   &--burger-icon {
     display: none;
   }
+
+
 }
 #active {
   font-weight: $fw-6;

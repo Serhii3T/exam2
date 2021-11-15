@@ -1,0 +1,12 @@
+mixin section-our-doctors()
+  section.c-section-our-doctors
+    .c-section-our-doctors__wrapper.c-container
+      .c-section-our-doctors__text
+        p.c-section-our-doctors__sub-title Trusted Care
+        h2.c-section-our-doctors__title Our Doctors
+      .c-section-our-doctors__item 
+        +item-doctor({
+          srcImg: './assets/images/doctor1.png',
+          name: 'Ukushu Zaruku',
+          speciality: 'Neurology',
+        })

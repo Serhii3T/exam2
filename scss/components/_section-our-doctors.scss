@@ -1,0 +1,25 @@
+.c-section-our-doctors { 
+  min-height: 850px;
+  
+  &__text {
+    text-align: center;
+    margin: 65px 0;
+  }
+
+  &__sub-title {
+    font-size: $fs-caption + px;
+    line-height: $lh-sub + px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: $c-secondary;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  &__title {
+    font-family: $f-yeseva-one-regular;
+    font-size: $fs-display2 + px;
+    line-height: $lh-title + px;
+    color: $c-primary;
+  }
+}

@@ -1,0 +1,41 @@
+mixin item-doctor(args)
+  - let srcImg = args.srcImg || 'default link';
+  - let name = args.name || '';
+  - let speciality = args.speciality || '';
+
+
+  .e-item-doctor
+    .e-item-doctor__wrapper
+      .e-item-doctor__img 
+        +image({
+          src: srcImg,
+          alt: 'doctor'
+        })
+      .e-item-doctor__text
+        .e-item-doctor__name=name
+        .e-item-doctor__speciality=speciality
+        .e-item-doctor__social-link 
+          .e-item-doctor__link
+            +link({
+              href: '#',
+              endIcon: 'linkedin',
+              btnProfile: true
+            })
+          .e-item-doctor__link
+            +link({
+              href: '#',
+              endIcon: 'facebook',
+              btnProfile: true
+            })
+          .e-item-doctor__link
+            +link({
+              href: '#',
+              endIcon: 'instagram',
+              btnProfile: true
+            })
+      .e-item-doctor__btn
+        +link({
+          href: '#',
+          text: 'View Profile',
+          easyBtn: true
+        })

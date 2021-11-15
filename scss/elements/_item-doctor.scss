@@ -1,0 +1,58 @@
+.e-item-doctor {
+  min-height: 540px;
+  max-width: 317px;
+
+  &__wrapper {
+    border-radius: 3px;
+    z-index: 2;
+  }
+
+  &__img {
+    max-height: 350px;
+    max-width: 317px;
+  }
+
+  &__text {
+    background-color: $c-accent;
+    text-align: center;
+    color: $c-primary;
+    padding: 25px 0;
+  }
+
+  &__name {
+    font-size: $fs-caption + px;
+    line-height: $lh-name + px;
+    margin-bottom: 10px;
+  }
+
+  &__speciality {
+    font-size: $fs-caption + px;
+    line-height: $lh-sub + px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  &__social-link {
+    justify-content: center;
+    display: flex;
+  }
+
+  &__link {
+    background-color: $c-primary;
+    border-radius: 50%;
+    margin: 0 10px;
+    padding: 6px;
+    height: 24px;
+    width: 24px;
+  }
+
+  &__btn {
+    background-color: $c-primary;
+    color: $c-accent;
+    text-align: center;
+    display: block;
+    padding: 12px 0;
+  }
+}

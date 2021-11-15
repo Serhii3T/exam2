@@ -6,13 +6,18 @@ mixin link(args)
   - let navStyle = args.navStyle || false;
   - let onclick = args.onclick || false;
   - let burgerStyle = args.burgerStyle || false;
-  - let classList = `${(logoStyle ? 'e-link--logo-style bg-transparent' : '') + ' ' + (linkMode ? 'e-link--btn' : '') + ' ' + (navStyle ? 'e-link--nav-style #active' : '') + ' ' + (burgerStyle? 'e-link--burger-icon' : '')}`;
+  - let arrowStyle = args.arrowStyle || false;
+  - let classList = `${(logoStyle ? 'e-link--logo-style bg-transparent' : '') + ' ' + (linkMode ? 'e-link--btn' : '') + ' ' + (navStyle ? 'e-link--nav-style #active' : '') + ' ' + (burgerStyle? 'e-link--burger-icon' : '') + ' ' + (arrowStyle? 'e-link--arrow-style' : '')}`;
   - let endIcon = args.endIcon || false;
+  - let style = args.style || false;
+  - let easyBtn = args.easyBtn || false;
+  - let btnProfile = args.btnProfile || false;
+  - let classSvg = `${(easyBtn ? 'e-link--easy-btn' : '') + ' ' + (btnProfile ? 'e-icon--btn-profile' : '')}`;
 
   a.e-link(href=href onclick=onclick class=classList type=type)
     span=text
 
     //- Arrow svg
     if endIcon
-      svg.e-icon.icon
+      svg.e-icon.icon(class=classSvg)
         use(xlink:href=`#icon-${endIcon}`)

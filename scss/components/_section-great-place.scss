@@ -1,9 +1,38 @@
 .c-section-great-place {
   min-width: 625px;
+  text-align: center;
 
   &__description {
-    margin: 115px 0 60px;
+    margin: 115px auto 60px;
     max-width: 660px;
+  }
+
+  &__subtitle {
+    font-size: $fs-caption + px;
+    line-height: $lh-sub + px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: $c-secondary;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  &__title {
+    font-family: $f-yeseva-one-regular;
+    font-size: $fs-display2 + px;
+    line-height: $lh-title + px;
+    margin-bottom: 15px;
+    color: $c-primary;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    width: fit-content;
+    display: inline-block;
+    justify-content: center;
   }
 
   &__img {
