@@ -1,0 +1,15 @@
+.c-section-great-place {
+  min-width: 625px;
+
+  &__description {
+    margin: 115px 0 60px;
+    max-width: 660px;
+  }
+
+  &__img {
+    background-image: url(./assets/images/Blackdoctors1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,20 @@
+mixin section-contact()
+  section.section-contact#contact
+    .section-contact__wrapper.c-container
+      .section-contact__rubric 
+        h2.section-contact__title Contact
+        p.section-contact__text For new projects, ideas, business or anything 
+          | you'd like to discuss, contact with me!
+      .section-contact__form-address 
+        form(action="#" method="post").section-contact__form
+          input(type="text" id="fname" name="firstname" placeholder="Your name..").section-contact__input
+          input(type="text" placeholder="Your email..." name="email" id="email" required).section-contact__input
+          input(type="tel" placeholder="Your phone number..." name="phone" id="phone" required).section-contact__input
+          textarea(id="message" name="message" placeholder="Your message...").section-contact__textarea
+        .section-contact__communication 
+          p.section-contact__heading address
+          p.section-contact__info 123 City name, Street, City, Country
+          p.section-contact__heading email
+          p.section-contact__info cahee@domain.com
+          p.section-contact__heading phone
+          p.section-contact__info +012 345 6789

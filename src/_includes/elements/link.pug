@@ -1,0 +1,18 @@
+mixin link(args)
+  - let href = args.href || '#';
+  - let text = args.text || '';
+  - let logoStyle = args.logoStyle || false;
+  - let linkMode = args.linkMode || false;
+  - let navStyle = args.navStyle || false;
+  - let onclick = args.onclick || false;
+  - let burgerStyle = args.burgerStyle || false;
+  - let classList = `${(logoStyle ? 'e-link--logo-style bg-transparent' : '') + ' ' + (linkMode ? 'e-link--btn' : '') + ' ' + (navStyle ? 'e-link--nav-style #active' : '') + ' ' + (burgerStyle? 'e-link--burger-icon' : '')}`;
+  - let endIcon = args.endIcon || false;
+
+  a.e-link(href=href onclick=onclick class=classList type=type)
+    span=text
+
+    //- Arrow svg
+    if endIcon
+      svg.e-icon.icon
+        use(xlink:href=`#icon-${endIcon}`)

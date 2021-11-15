@@ -1,0 +1,51 @@
+.c-section-subscribe {
+  background-image: url(../../assets/images/subscribe.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__wrapper {
+    min-height: 500px;
+    padding: 135px 0;
+  }
+
+  &__info {
+    max-width: 560px;
+  }
+
+  &__title {
+    font-family: $f-raleway-bold;
+    font-size: px($fs-h4);
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-size: px($fs-text);
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    display: flex;
+
+    @include media ('<800px') {
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    margin-right: 30px;
+    max-width: 570px;
+    padding: 0 10px;
+    width: 100%;
+
+    @include media ('<800px') {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__btn {
+    background-color: $c-light-green;
+    box-shadow: $bs-base;
+    width: fit-content;
+  }
+}

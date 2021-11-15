@@ -1,0 +1,16 @@
+mixin section-subscribe()
+  section.c-section-subscribe#subscribe
+    .c-section-subscribe__wrapper.c-container
+      .c-section-subscribe__info
+        h4.c-section-subscribe__title Subscribe To Us
+        p.c-section-subscribe__text Dolor sit amet, consectetur 
+          | adipisicing elit, sed do eiusmod tempor incididunt ut 
+          | labore et dolore magna aliqua. Ut enim ad minim veniam.
+      .c-section-subscribe__form 
+        input.c-section-subscribe__input(placeholder='Your email address...', name="email", id="email", required)
+        .c-section-subscribe__btn
+          +link({
+            href: '#home',
+            text: 'SUBSCRIBE',
+            linkMode: true
+          })

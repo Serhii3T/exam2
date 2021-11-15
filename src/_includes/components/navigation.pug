@@ -1,0 +1,42 @@
+mixin navigation()
+  nav.c-navigation
+    ul.c-navigation__list#myTopnav
+      button.c-navigation__btn
+      li.c-navigation__item
+        +link({
+          href: '#home',
+          text: 'Home',
+        })
+      li.c-navigation__item 
+        +link({
+          href: '#about',
+          text: 'About us',
+        })
+      li.c-navigation__item 
+        +link({
+          href: '#services',
+          text: 'Services',
+        })
+      li.c-navigation__item 
+        +link({
+          href: '#doctors',
+          text: 'Doctors',
+        })
+      li.c-navigation__item 
+        +link({
+          href: '#news',
+          text: 'News',
+        })
+      li.c-navigation__item 
+        +link({
+          href: '#contact',
+          text: 'Contact',
+        })
+      li.c-navigation__item 
+        +link({
+          href: 'javascript:void(0);',
+          text: '',
+          burgerStyle: true,
+          onclick: 'myFunction()'
+        })
+    +burger-menu()

@@ -1,0 +1,78 @@
+.c-section-gallery { 
+  background-color: #FFE92F;
+
+  &__wrapper {
+    flex-direction: column;
+    min-height: 1540px;
+    text-align: center;
+    display: flex;
+    padding: 100px 0;
+  }
+
+  &__info {
+    max-width: 590px;
+    margin: 0 auto 40px;
+  }
+
+  &__title {
+    font-family: $f-raleway-bold;
+    font-size: px($fs-h2);
+    margin-bottom: 25px;
+
+    @include media ('<phone') {
+      font-size: px($fs-h3);
+    }
+  }
+
+  &__text {
+    font-size: px($fs-text);
+
+    @include media ('<680px') {
+      padding: 0 20px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 50px;
+    display: grid;
+    gap: 28px;
+
+    &--1 {
+      grid-column: 1 / span 3;
+      grid-row: 1/ span 2;
+    }
+
+    &--2 {
+      grid-column: 4;
+      grid-row: 1 ;
+    }
+
+    &--3 {
+      grid-column: 4;
+      grid-row: 2 ;
+    }
+
+    &--4 {
+      grid-column: 1 / span 2;
+      grid-row: 3;
+    }
+
+    &--5 {
+      grid-column: 3 / span 2;
+      grid-row: 3;
+    }
+
+    @include media ('<1300px') {
+      flex-direction: column;
+      display: flex;
+      padding: 25px;
+    }
+  }
+
+  &__btn {
+    background-color: $c-darker-blue;
+    box-shadow: $bs-base;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}

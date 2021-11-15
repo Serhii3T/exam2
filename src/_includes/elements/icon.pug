@@ -1,0 +1,5 @@
+mixin icon(args)
+  - let svgLink = args.svgLink || 'heart-plus';
+
+    svg.e-icon.icon
+      use(xlink:href=`#icon-${svgLink}`)

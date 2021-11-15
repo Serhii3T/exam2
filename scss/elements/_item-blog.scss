@@ -1,0 +1,41 @@
+.e-item-blog {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  height: 310px;
+  padding: 20px;
+
+  &:hover {
+    animation: $a-base;
+    cursor: pointer;
+  }
+
+  &__data {
+    background-color: $c-light-black;
+    font-family: $f-raleway-bold;
+    line-height: px($lh-small);
+    margin: 10px 0 0 10px;
+    text-align: center;
+    max-height: 60px;
+    max-width: 60px;
+  }
+  
+  &__day {
+    font-size: px($fs-day);
+  }
+
+  &__mounth {
+    font-family: $f-raleway-black;
+    font-size: px($fs-mounth);
+  }
+
+  &__heading {
+    font-size: px($fs-link);
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+
+  &__author {
+    font-size: px($fs-author);
+  }
+}

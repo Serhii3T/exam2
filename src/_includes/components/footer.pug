@@ -1,0 +1,15 @@
+mixin footer()
+  footer.footer#footer
+    .footer__wrapper.c-container
+      .footer__year
+        p &#169; 2015 Company. All right reserved.
+      .footer__logo 
+        +link({
+          href: '#home',
+          logoStyle: true,
+          text: 'Cahee',
+        })
+      .footer__signature
+        p Made with  
+        a(href='#home').footer__link love
+        p by Auskteez 

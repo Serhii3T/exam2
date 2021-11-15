@@ -1,0 +1,13 @@
+mixin item-goals(args)
+
+ - let svgName = args.svgName || 'heart-plus';
+ - let text = args.text || 'Default text';
+ - let style = args.style || ' ';
+
+  .e-item-goals(style=style)
+    .e-item-goals__text 
+      p=text
+    .e-item-goals__svg
+      +icon({
+        svgLink: svgName,
+      })

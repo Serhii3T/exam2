@@ -1,0 +1,15 @@
+mixin item-blog(args)
+  - let style = args.style || false;
+  - let day = args.day || 'Defaul text';
+  - let mounth = args.mounth || 'Defaul text';
+  - let heading = args.heading || 'Defaul text';
+  - let author = args.author || 'Defaul text';
+
+  .e-item-blog.d-flex(style=style)
+    .e-item-blog__wrapper.d-flex.flex-column.justify-content-between
+      .e-item-blog__data.rounded-3.w-100.h-100
+        p.e-item-blog__day.mb-1=day
+        p.e-item-blog__mounth=mounth
+      .e-item-blog__text  
+        p.e-item-blog__heading=heading
+        p.e-item-blog__author=author

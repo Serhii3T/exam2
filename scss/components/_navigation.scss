@@ -1,0 +1,65 @@
+.c-navigation {
+
+  &__btn {
+    background-color: transparent;
+    position: absolute;
+    @include size(30);
+    display: none;
+    border: none;
+    right: 10px;
+    top: 10px;
+
+    &::before,
+    &::after {
+      background-color: $c-white;
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      content: "";
+      right: 0;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    @include media('<tablet') {
+      display: block;
+    }
+  }
+
+  &__list{
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+
+    @include media("<tablet") {
+      justify-content: flex-start;
+      flex-direction: column;
+      transition: $t-normal;
+      background: white;
+      position: absolute;
+      max-width: 350px;
+      padding: 20px;
+      right: -100%;
+      width: 100%;
+      z-index: 10;
+      bottom: 0;
+      top: 0;
+
+      &.active {
+        right: 0;
+      }
+    }
+  }
+
+  &__item {
+    margin-right: 20px;
+    color: $c-white;
+  }
+}

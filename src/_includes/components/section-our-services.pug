@@ -1,0 +1,30 @@
+mixin section-our-services()
+  section.c-section-our-services#services
+    .c-section-our-services__wrapper.c-container
+      .c-section-our-services__nav 
+        .c-section-our-services__item
+          +item-services({
+            text: 'Online Shopping',
+            iconLink: 'cart',
+            href: '#home'
+          })
+        .c-section-our-services__item
+          +item-services({
+            text: 'Quality Product',
+            iconLink: 'hand',
+            href: '#home'
+          })
+        .c-section-our-services__item
+          +item-services({
+            text: 'Domestic & International Delivery',
+            iconLink: 'earth',
+            href: '#home'
+          })
+        .c-section-our-services__item
+          +item-services({
+            text: 'Well Organized',
+            iconLink: 'carrot',
+            href: '#home'
+          })
+      .c-section-our-services__img 
+        h2.c-section-our-services__title Our Services

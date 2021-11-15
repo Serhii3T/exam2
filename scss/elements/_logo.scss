@@ -1,0 +1,21 @@
+.e-logo {
+  font-family: $f-yeseva-one-regular;
+  line-height: $lh-logo + px;
+  font-size: $fs-logo + px;
+  display: inline-block;
+  flex-direction: row;
+  width: fit-content;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: $t-normal;
+  }
+
+  &__text1 {
+    color: $c-primary;
+  }
+
+  &__text2 {
+    color: $c-secondary;
+  }
+}

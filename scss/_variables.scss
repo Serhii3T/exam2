@@ -1,0 +1,71 @@
+  // Fonts
+  $f-yeseva-one-regular: "yeseva-one-regular", cursive;
+  $f-work-sans-regular: "Work Sans", sans-serif;
+  $f-work-sans-medium: "Work Sans", sans-serif;
+  $f-work-sans-bold: "Work Sans", sans-serif;
+
+
+  // Animation
+  $a-base: box-shadow-block .5s infinite alternate;
+
+  // Transition
+  $t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+  // Box shadow
+  $bs-base: 1px 1px 5px black;
+
+  // Colors 
+  $c-light-black: #2626267e;
+  $c-darker-blue: #5585A2;
+  $c-darker-grey: #262626;
+  $c-light-green: #96B92C;
+  $c-light-red: #f25252;
+  $c-purple: #B07CF7;
+  $c-orange: #FF6033;
+  $c-form-a: #00C4C4;
+  $c-footer:#262626;
+  $c-gray: #9D9D9D;
+  $c-form: #63D0D4;
+  $c-blue: #355B82;
+
+
+  $c-turquoise: #00B1B1;
+  $c-secondary: #159EEC;
+  $c-bg-color: #E5E4E8;
+  $c-primary: #1F2B6C;
+  $c-accent: #BFD2F8;
+  $c-white: #fff;
+  $c-black: #000;
+
+  // Font size
+  $fs-sm-footer: 25;
+  $fs-author: 13;
+  $fs-mounth: 21;
+  $fs-text: 17;
+  $fs-icon: 30;
+  $fs-base: 16;
+  $fs-link: 20;
+  $fs-logo: 50;
+  $fs-day: 32;
+  $fs-h2: 90;
+  $fs-h3: 60;
+  $fs-h4: 40;
+
+  $fs-display1: 48;
+  $fs-display2: 32;
+  $fs-caption: 18;
+  $fs-title: 26;
+  $fs-small: 14;
+  $fs-body: 16;
+  $fs-logo: 36;
+  
+  // Line height
+  $lh-big: 55;
+  $lh-logo: 42;
+  $lh-base: 23;
+  $lh-info: 18;
+
+  // Font weight
+  $fw-5: 500;
+  $fw-6: 600;
+  $fw-7: 700;

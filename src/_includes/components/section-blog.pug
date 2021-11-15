@@ -1,0 +1,42 @@
+mixin section-blog()
+  section.c-section-blog#blog
+    .c-section-blog__wrapper.c-container
+      .c-section-blog__info 
+        h2.c-section-blog__title Blog
+        p.c-section-blog__text Dolore magna aliqua. Ut enim ad minim 
+          | veniam, quis nostrud exercitation ullamco laboris nisi ut 
+          | aliquip ex ea commodo consequat. Duis aute irure dolor in 
+          | reprehenderit in voluptate velit.
+      .c-section-blog__block
+        .c-section-blog__item.col-12.col-md-6.col-lg-4.d-flex 
+          +item-blog({
+            style: 'background-image: url(../../assets/images/blog1.png);',
+            day: '20',
+            mounth: 'NOV',
+            heading: 'Green Smoothies: Too Much of a Good Thing?',
+            author: 'By Auskteez - 2 hours ago',
+          })
+        .c-section-blog__item.col-12.col-md-6.col-lg-4.d-flex 
+          +item-blog({
+            style: 'background-image: url(../../assets/images/blog2.png);',
+            day: '14',
+            mounth: 'NOV',
+            heading: 'Growing Food and a “Thirst” for Innovation',
+            author: 'By Auskteez - 3 hours ago',
+          })
+        .c-section-blog__item.col-12.col-md-6.col-lg-4.d-flex 
+          +item-blog({
+            style: 'background-image: url(../../assets/images/blog3.png);',
+            day: '10',
+            mounth: 'NOV',
+            heading: 'Pesticides & Food: What You Need to Know',
+            author: 'By Auskteez - 6 hours ago',
+          })
+
+      //- btn
+      .c-section-blog__btn
+        +link({
+          href: '#home',
+          text: 'WIEW MORE',
+          linkMode: true
+        })

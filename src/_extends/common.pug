@@ -1,0 +1,28 @@
+include ../_includes/elements/index
+include ../_includes/components/index
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    //- Bootstrap
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous")
+    //- jQuery
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+    //- Fontawesome
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    //- Favicon
+    link(rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon")
+    //- Main style
+    link(rel='stylesheet' href='index.css')
+    block title
+      title HW-15-16-17
+  body
+    include ../../assets/icon/common/symbol-defs.svg
+    .bg-overlay
+    .l-common
+      block content
+      block script 
+        //- main js
+        script(src="./index.js") 657

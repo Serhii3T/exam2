@@ -1,0 +1,52 @@
+.c-section-blog {
+  background-color: $c-purple;
+  color: $c-white;
+
+  &__wrapper {
+    padding-bottom: 20px;
+    min-height: 865px;
+  }
+
+  &__info {
+    padding: 80px 0 45px;
+    text-align: center;
+    max-width: 565px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__title {
+    font-family: $f-raleway-bold;
+    font-size: px($fs-h2);
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: px($fs-text);
+  }
+
+  &__block {
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    display: flex;
+
+    @include media ('<825px') {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    max-width: 370px;
+    padding: 0 5px 0;
+  }
+
+  &__btn {
+    display: flex;
+    background-color: $c-light-red;
+    box-shadow: $bs-base;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}

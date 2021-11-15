@@ -1,0 +1,29 @@
+@keyframes box-shadow-block {
+  0% {
+    box-shadow: 1px 1px 1px 1px black;
+  }
+  33% {
+    box-shadow: 3px 3px 3px 3px black;
+  }
+  100% {
+    box-shadow: 5px 5px 5px 5px black;
+  }
+}
+
+@keyframes svg-opacity {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}

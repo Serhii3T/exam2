@@ -1,0 +1,64 @@
+.c-section-our-services {
+  background-color: #70BEFF;
+
+  &__wrapper {
+    grid-template-columns: 1fr 1fr;
+    min-height: 790px;
+    display: grid;
+
+    @include media ('<desktop') {
+      flex-direction: column;
+      padding: 50px 15px;
+      display: flex;
+    }
+  }
+
+  &__nav {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+
+    @include media ('<desktop') {
+      order: 2;
+    }
+  }
+
+  &__item {
+    justify-content: center;
+    margin-bottom: 20px;
+    display: flex;
+    // text-decoration: none;
+  }
+
+  &__img {
+    background-image: url(../../assets/images/our-services.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    background-size: auto;
+    align-items: center;
+    display: flex;
+
+    @include media ('<desktop') {
+      margin-bottom: 20px;
+      min-height: 520px;
+      order: 1;
+    }
+
+    @include media ('<540px') {
+      background-size: contain;
+      min-height: 260px;
+    }
+  }
+
+  &__title {
+    font-family: $f-raleway-bold;
+    font-size: px($fs-h2);
+    text-align: center;
+    color: $c-white;
+
+    @include media ('<540px') {
+      font-size: px($fs-h3);
+    }
+  }
+}

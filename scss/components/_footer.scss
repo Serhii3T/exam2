@@ -1,0 +1,43 @@
+.footer {
+  background-color: $c-footer;
+  color: $c-gray;
+  
+  &__wrapper {
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90px;
+    padding: 10px 0;
+    display: flex;
+
+    @include media ('<650px') {
+      flex-direction: column;
+    }
+  }
+
+  &__year {
+    padding: 10px;
+
+    @include media ('<650px') {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__logo {
+    font-size: 8px;
+  }
+
+  &__signature {
+    display: flex;
+    padding: 10px;
+  }
+
+  &__link {
+    color: $c-light-red;
+    padding: 0 3px;
+
+    &:hover {
+      background-color: transparent;
+      color: $c-turquoise;
+    }
+  }
+}

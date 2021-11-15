@@ -1,0 +1,17 @@
+.e-item-goals {
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 25px 20px; 
+  min-width: 315px;
+  display: flex;
+
+  &__text {
+    align-items: center;
+    display: flex;
+  }
+
+  &__svg {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}

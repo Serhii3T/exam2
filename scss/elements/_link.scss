@@ -1,0 +1,49 @@
+.e-link {
+  transition: $t-normal;
+  display: inline-block;
+
+  // &--logo-style {
+  //   font-family: $f-pacifico-reg;
+  //   font-size: em($fs-logo);
+  //   line-height: $lh-typic;
+
+  //   &:hover {
+  //     background-color: transparent;
+  //     color: $c-turquoise;
+  //   }
+  // }
+
+  &--btn {
+    font-family: $f-work-sans-medium;
+    background-color: $c-accent;
+    border-radius: 22px;
+    font-weight: $fw-5;
+    padding: 13px 35px;
+    color: $c-primary;
+
+    &:hover {
+      background-color: $c-accent;
+      color: $c-turquoise;
+    }
+  }
+
+  // &--nav-style {
+  //   color: $c-black;
+  //   font-family: $f-raleway-bold;
+  //   margin-top: 7px;
+  //   padding: 5px 0;
+
+  //   &:hover {
+  //     background-color: transparent;
+  //     color: $c-turquoise;
+  //   }
+  // }
+
+  &--burger-icon {
+    display: none;
+  }
+}
+#active {
+  font-weight: $fw-6;
+  color: $c-accent;
+}

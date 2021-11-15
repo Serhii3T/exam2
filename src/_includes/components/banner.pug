@@ -1,0 +1,67 @@
+mixin banner()
+  .c-banner#home
+    .c-banner__wrapper
+      .c-banner__contact.c-container
+        .c-banner__logo 
+          +logo()
+        .c-banner__info
+          .c-banner__phone
+            +banner-info({
+              svgName: 'phone',
+              name: 'emergency',
+              number: '(237) 681-812-255'
+            })
+          .c-banner__hour
+            +banner-info({
+              svgName: 'time',
+              name: 'work hour',
+              number: '09:00 - 20:00 Everyday'
+            })
+          .c-banner__location
+            +banner-info({
+              svgName: 'local',
+              name: 'location',
+              number: '0123 Some Place'
+            })
+      .c-banner__navigation
+        .c-banner__navigation__wrapper.c-container
+          .c-banner__nav 
+            +navigation()
+          .c-banner__search
+            input(type="text" name="search").c-banner__input-search
+            +link({
+              href: '#',
+              text: 'Appointment',
+              linkMode: true,
+              type: 'submit'
+            })
+      .c-banner__home
+        .c-banner__heading.c-container
+          .c-banner__text
+            p.c-banner__suptitle caring for life
+            h1.c-banner__title Leading the Way in Medical Excellence
+            +link({
+              href: '#',
+              text: 'Our Services',
+              linkMode: true,
+            })
+          .c-banner__goals
+            .c-banner__calendar 
+              +item-goals({
+                style: 'background-color: #1F2B6C; color: #fff;',
+                text: 'Book an Appointment',
+                svgName: 'calendar'
+              })
+            .c-banner__team 
+              +item-goals({
+                style: 'background-color: #BFD2F8; color: #1F2B6C;',
+                text: 'Book an Appointment',
+                svgName: 'team'
+              })
+            .c-banner__cash
+              +item-goals({
+                style: 'background-color: #159EEC; color: #fff;',
+                text: 'Book an Appointment',
+                svgName: 'cash'
+              })
+          
