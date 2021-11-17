@@ -1,24 +1,37 @@
-.e-banner-info {
-  padding-left: 20px;
+.e-header-info {
 
   &__wrapper {
     display: flex;
   }
 
   &__svg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     max-height: 40px;
     max-width: 40px;
+
+    @include media("<tablet") {
+      max-height: 17px;
+      max-width: 17px;
+    }
     
     &:hover {
       animation: svg-opacity 1s infinite alternate;
     }
   }
+  
 
   &__text {
     font-family: $f-work-sans-medium;
     line-height: $lh-info + px;
     font-weight: $fw-5;
     padding-left: 10px;
+
+    @include media("<tablet") {
+      font-size: 14px;
+      padding-left: 5px;
+    }
   }
 
   &__name {

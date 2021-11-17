@@ -2,17 +2,6 @@
   transition: $t-normal;
   display: inline-block;
 
-  // &--logo-style {
-  //   font-family: $f-pacifico-reg;
-  //   font-size: em($fs-logo);
-  //   line-height: $lh-typic;
-
-  //   &:hover {
-  //     background-color: transparent;
-  //     color: $c-turquoise;
-  //   }
-  // }
-
   &--btn {
     font-family: $f-work-sans-medium;
     background-color: $c-accent;
@@ -37,37 +26,43 @@
   }
 
   &--easy-btn {
-    max-width: 10px;
-    max-height: 10px;
-    margin-left: 10px;
     stroke: #1F2B6C;
+    margin-left: 10px;
+    max-height: 10px;
+    max-width: 10px;
   }
 
   &--btn-profile {
+    align-items: center;
     fill: $c-accent;
     display: flex;
-    align-items: center;
+    height: 12px;
+    width: 12px;
   }
 
-  // &--nav-style {
-  //   color: $c-black;
-  //   font-family: $f-raleway-bold;
-  //   margin-top: 7px;
-  //   padding: 5px 0;
+  &--profile {
+    padding: 6px;
 
-  //   &:hover {
-  //     background-color: transparent;
-  //     color: $c-turquoise;
-  //   }
-  // }
+    &:hover svg {
+      fill: $c-turquoise;
+    }
+  }
 
   &--burger-icon {
     display: none;
   }
 
-
+  &--view-profile {
+    padding: 12px 0;
+    display: block;
+  }
 }
+
 #active {
   font-weight: $fw-6;
   color: $c-accent;
+
+  @include media("<tablet") {
+    color: $c-primary;
+  }
 }

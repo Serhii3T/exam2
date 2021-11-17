@@ -2,5 +2,5 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32">
 <title>time</title>
 <path fill="none" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" stroke="#000" d="M16.5 31c8.284 0 15-6.716 15-15s-6.716-15-15-15c-8.284 0-15 6.716-15 15s6.716 15 15 15z"></path>
-<path fill="none" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" stroke="#000" d="M21.5 23.5l-5-7.5v-10"></path>
+<path fill="none" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" stroke="#159EEC" d="M21.5 23.5l-5-7.5v-10"></path>
 </svg>

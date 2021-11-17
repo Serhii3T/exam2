@@ -1,5 +1,8 @@
 .c-navigation {
-
+  @include media("<tablet") {
+    width: 100%;
+    z-index: 99;
+  }
   &__btn {
     background-color: transparent;
     position: absolute;
@@ -39,27 +42,20 @@
     display: flex;
 
     @include media("<tablet") {
-      justify-content: flex-start;
       flex-direction: column;
-      transition: $t-normal;
-      background: white;
-      position: absolute;
-      max-width: 350px;
-      padding: 20px;
-      right: -100%;
       width: 100%;
-      z-index: 10;
-      bottom: 0;
-      top: 0;
-
-      &.active {
-        right: 0;
-      }
     }
   }
 
   &__item {
     margin-right: 20px;
     color: $c-white;
+
+    @include media("<tablet") {
+      margin-bottom: 20px;
+      margin-right: 0;
+      font-size: 24px;
+      color: $c-primary;
+    }
   }
 }

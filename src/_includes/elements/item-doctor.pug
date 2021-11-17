@@ -2,6 +2,9 @@ mixin item-doctor(args)
   - let srcImg = args.srcImg || 'default link';
   - let name = args.name || '';
   - let speciality = args.speciality || '';
+  - let linkInstagram = args.linkInstagram || '#';
+  - let linkLinkedIn = args.linkLinkedIn || '#';
+  - let linkFacebook = args.linkFacebook || '#';
 
 
   .e-item-doctor
@@ -17,19 +20,22 @@ mixin item-doctor(args)
         .e-item-doctor__social-link 
           .e-item-doctor__link
             +link({
-              href: '#',
+              href: linkLinkedIn,
+              target: '_blank',
               endIcon: 'linkedin',
               btnProfile: true
             })
           .e-item-doctor__link
             +link({
-              href: '#',
+              href: linkFacebook,
+              target: '_blank',
               endIcon: 'facebook',
               btnProfile: true
             })
           .e-item-doctor__link
             +link({
-              href: '#',
+              href: linkInstagram,
+              target: '_blank',
               endIcon: 'instagram',
               btnProfile: true
             })
@@ -37,5 +43,5 @@ mixin item-doctor(args)
         +link({
           href: '#',
           text: 'View Profile',
-          easyBtn: true
+          viewProfile: true
         })

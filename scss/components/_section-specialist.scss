@@ -1,0 +1,75 @@
+.c-section-specialist {
+  text-align: center;
+  min-height: 775px;
+  padding: 65px 0;
+
+  &__suptitle {
+    text-transform: uppercase;
+    letter-spacing: $ls-base;
+    color: $c-secondary;
+    font-weight: bold;
+  }
+
+  &__title {
+    font-family: $f-yeseva-one-regular;
+    font-size: $fs-display2 + px;
+    line-height: $lh-title + px;
+    margin-bottom: 65px;
+    color: $c-primary;
+  }
+
+  &__specialists {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 170px);
+    display: grid;
+
+    @include media ('<desktop') {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 170px);
+    }
+
+    @include media ('<tablet') {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 170px);
+    }
+
+    @include media ('<phone') {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 170px);
+    }
+  }
+
+  &__item { 
+    border: 0.15px solid $c-web;
+    justify-content: center;
+    display: block;
+
+
+    & a {
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+      padding: 46px;
+      
+      &:hover {
+        background-color: $c-primary;
+        transition: $t-normal;
+        color: $c-white;
+        border-radius: 5px;
+      }
+
+      &:hover svg{
+        transition: $t-normal;
+        fill: $c-white;
+      }
+    }
+
+    & a svg {
+      fill: $c-secondary;
+      margin: 0 auto 10px auto;
+      height: 44px;
+      width: 50px;
+
+    }
+  }
+}

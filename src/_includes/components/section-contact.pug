@@ -1,20 +1,42 @@
 mixin section-contact()
-  section.section-contact#contact
-    .section-contact__wrapper.c-container
-      .section-contact__rubric 
-        h2.section-contact__title Contact
-        p.section-contact__text For new projects, ideas, business or anything 
-          | you'd like to discuss, contact with me!
-      .section-contact__form-address 
-        form(action="#" method="post").section-contact__form
-          input(type="text" id="fname" name="firstname" placeholder="Your name..").section-contact__input
-          input(type="text" placeholder="Your email..." name="email" id="email" required).section-contact__input
-          input(type="tel" placeholder="Your phone number..." name="phone" id="phone" required).section-contact__input
-          textarea(id="message" name="message" placeholder="Your message...").section-contact__textarea
-        .section-contact__communication 
-          p.section-contact__heading address
-          p.section-contact__info 123 City name, Street, City, Country
-          p.section-contact__heading email
-          p.section-contact__info cahee@domain.com
-          p.section-contact__heading phone
-          p.section-contact__info +012 345 6789
+  .c-section-contact
+    .c-section-contact__wrapper.c-container
+      p.c-section-contact__suptitle get in touch
+      h2.c-section-contact__title Contact
+      .c-section-contact__info 
+        .c-section-contact__item
+          +link({
+            href: '#',
+            target: '_blank',
+            text2: 'Emergency',
+            text3: '(237) 681-812-255',
+            text4: '(237) 666-331-894',
+            endIcon: 'phone',
+          })
+        .c-section-contact__item
+          +link({
+              href: '#',
+              target: '_blank',
+              text2: 'Location',
+              text3: '0123 Some place',
+              text4: '9876 Some country',
+              endIcon: 'local',
+            })
+        .c-section-contact__item
+          +link({
+            href: '#',
+            target: '_blank',
+            text2: 'Email',
+            text3: 'fildineeesoe@gmil.com',
+            text4: 'myebstudios@gmail.com',
+            endIcon: 'mail',
+          })
+        .c-section-contact__item
+          +link({
+            href: '#',
+            target: '_blank',
+            text2: 'Working Hours',
+            text3: 'Mon-Sat 09:00-20:00',
+            text4: 'Sunday Emergency only',
+            endIcon: 'time',
+          })

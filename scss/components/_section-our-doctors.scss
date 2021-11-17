@@ -1,5 +1,19 @@
 .c-section-our-doctors { 
   min-height: 850px;
+
+  &__wrapper {
+    @include media ('<phone') {
+      padding: 0;
+    }
+  }
+
+  &__item {
+    overflow: hidden;
+
+    @include media ('<phone') {
+      width: 255px;
+    }
+  }
   
   &__text {
     text-align: center;
@@ -21,5 +35,51 @@
     font-size: $fs-display2 + px;
     line-height: $lh-title + px;
     color: $c-primary;
+  }
+}
+
+.swiper {
+  padding-top: 30px;
+
+  &-pagination {
+    position:static;
+    margin-top: 30px;
+
+    @include media ('<phone') {
+      margin-top: 40px
+    }
+
+    &-bullet {
+      width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,24px));
+      height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,24px));
+
+      @include media ('<phone') {
+        width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,10px));
+        height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,10px));  
+      }
+
+      &-active {
+        background: var(--swiper-pagination-color, $c-primary);
+      }
+    }
+  }
+
+  &-slide {
+    justify-content: center;
+    display: flex;
+    transition: 0.4s ease;
+
+    @include media ('<phone') {
+      max-width: 250px;
+      opacity: 0.5;
+    }
+
+    &-active {
+      
+      @include media ('<phone') {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+    }
   }
 }

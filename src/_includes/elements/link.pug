@@ -1,23 +1,31 @@
 mixin link(args)
   - let href = args.href || '#';
   - let text = args.text || '';
-  - let logoStyle = args.logoStyle || false;
+  - let text2 = args.text2 || '';
+  - let text3 = args.text3 || '';
+  - let text4 = args.text4 || '';
+  - let target = args.target || '_self';
   - let linkMode = args.linkMode || false;
-  - let navStyle = args.navStyle || false;
   - let onclick = args.onclick || false;
   - let burgerStyle = args.burgerStyle || false;
   - let arrowStyle = args.arrowStyle || false;
-  - let classList = `${(logoStyle ? 'e-link--logo-style bg-transparent' : '') + ' ' + (linkMode ? 'e-link--btn' : '') + ' ' + (navStyle ? 'e-link--nav-style #active' : '') + ' ' + (burgerStyle? 'e-link--burger-icon' : '') + ' ' + (arrowStyle? 'e-link--arrow-style' : '')}`;
   - let endIcon = args.endIcon || false;
   - let style = args.style || false;
   - let easyBtn = args.easyBtn || false;
   - let btnProfile = args.btnProfile || false;
-  - let classSvg = `${(easyBtn ? 'e-link--easy-btn' : '') + ' ' + (btnProfile ? 'e-icon--btn-profile' : '')}`;
+  - let viewProfile = args.viewProfile || false;
+  - let classList = `${(viewProfile ? 'e-link--view-profile' : '') + ' ' + (btnProfile ? 'e-link--profile' : '') + ' ' + (linkMode ? 'e-link--btn' : '') + ' ' + (burgerStyle? 'e-link--burger-icon' : '') + ' ' + (arrowStyle? 'e-link--arrow-style' : '')}`;
+  - let classSvg = `${(easyBtn ? 'e-link--easy-btn' : '') + ' ' + (btnProfile ? 'e-link--btn-profile' : '')}`;
 
-  a.e-link(href=href onclick=onclick class=classList type=type)
+  a.e-link(href=href target=target onclick=onclick class=classList type=type)
     span=text
 
     //- Arrow svg
     if endIcon
       svg.e-icon.icon(class=classSvg)
         use(xlink:href=`#icon-${endIcon}`)
+
+      //- text under svg
+      span.e-text-1=text2
+      span.e-text-2=text3
+      span.e-text-3=text4

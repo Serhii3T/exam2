@@ -1,15 +1,82 @@
 mixin footer()
-  footer.footer#footer
-    .footer__wrapper.c-container
-      .footer__year
-        p &#169; 2015 Company. All right reserved.
-      .footer__logo 
-        +link({
-          href: '#home',
-          logoStyle: true,
-          text: 'Cahee',
-        })
-      .footer__signature
-        p Made with  
-        a(href='#home').footer__link love
-        p by Auskteez 
+  footer.c-footer#c-footer
+    .c-footer__wrapper.c-container
+      .c-footer__top 
+        .c-footer__logo
+          +logo()
+          p.c-footer__subtext Leading the Way in Medical Execellence, Trusted Care.
+        .c-footer__important
+          p.c-footer__title Important Links
+          p.c-footer__text 
+            +link({
+              href: '#',
+              target: '_blank',
+              text: 'Appointment',
+            })
+          p.c-footer__text 
+            +link({
+              href: '#',
+              target: '_blank',
+              text: 'Doctors',
+            })
+          p.c-footer__text 
+            +link({
+              href: '#',
+              target: '_blank',
+              text: 'Services',
+            })
+          p.c-footer__text 
+            +link({
+              href: '#',
+              target: '_blank',
+              text: 'About Us',
+            })
+        .c-footer__contact
+          p.c-footer__title Contact Us
+          p.c-footer__text 
+            +link({
+              href: 'tel:237681812255',
+              target: '_blank',
+              text: 'Call: (237) 681-812-255',
+            })
+          p.c-footer__text 
+            +link({
+              href: 'mailto:fildineesoe@gmail.com',
+              target: '_blank',
+              text: 'Email: fildineesoe@gmail.com',
+            })
+          p.c-footer__text Address: 0123 Some place
+          p.c-footer__text Country: Allabama
+        .c-footer__newsletter
+          p.c-footer__title Newsletter
+          form(action='#' method='post')#form-mail.c-footer__form-mail
+            input(type="text" name="mail" placeholder="Enter your email address")#input-mail.c-footer__input-mail
+            button(type="submit").c-footer__btn-mail
+              +icon({
+                svgLink: 'telegram',
+              })
+      .c-footer__bottom
+        .c-footer__copyright
+          p.c-footer__text &#169; 2021 Hospital’s name All Rights Reserved by PNTEC-LTD
+        .c-footer__social-link
+          .c-footer__link
+            +link({
+              href: 'https://www.linkedin.com/in/coder-warlink-656a82225/',
+              target: '_blank',
+              endIcon: 'linkedin',
+              btnProfile: true
+            })
+          .c-footer__link
+            +link({
+              href: 'https://www.facebook.com/serega.tritenko',
+              target: '_blank',
+              endIcon: 'facebook',
+              btnProfile: true
+            })
+          .c-footer__link
+            +link({
+              href: 'https://www.instagram.com/seregatritenko/',
+              target: '_blank',
+              endIcon: 'instagram',
+              btnProfile: true
+            })

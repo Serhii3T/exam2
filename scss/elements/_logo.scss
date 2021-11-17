@@ -6,6 +6,10 @@
   flex-direction: row;
   width: fit-content;
 
+  @include media("<tablet") {
+    display: none;
+  }
+
   &:hover {
     transform: scale(1.1);
     transition: $t-normal;
@@ -13,9 +17,17 @@
 
   &__text1 {
     color: $c-primary;
+
+    @include media("<tablet") {
+      color: $c-accent;
+    }
   }
 
   &__text2 {
     color: $c-secondary;
+
+    @include media("<tablet") {
+      color: $c-white;
+    }
   }
 }

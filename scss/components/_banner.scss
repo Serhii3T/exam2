@@ -1,76 +1,16 @@
 .c-banner {
-
-  &__contact {
-    justify-content: space-between;
-    min-height: 80px;
-    display: flex;
-  }
-  
-  &__logo {
-    align-items: center;
-    display: flex;
-  }
-
-  &__info {
-    align-items: center;
-    display: flex;
-  }
-
-  &__navigation {
-    background-color: $c-primary;
-    align-items: center;
-    min-height: 80px;
-    display: flex;
-
-    &__wrapper {
-      justify-content: space-between;
-      display: flex;
-    }
-  }
-
-  &__nav {
-    align-items: center;
-    display: flex;
-  }
-
-  &__search {
-    display: flex;
-  }
-
-  &__input-search[type=text] {
-    background-image: url(./assets/icon/common/svg/search.svg);
-    transition: width 0.001s ease-in-out;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: 0;
-    background-size: 20px;
-    border-radius: 4px;
-    color: transparent;
-    margin-right: 10px;
-    font-size: 16px;
-    outline: none;
-    border: none;
-    width: 40px;
-    stroke: $c-white;
-  }
-  
-  &__input-search[type=text]:focus {
-    background-position: 10px 14px; 
-    padding: 5px 10px 5px 40px;
-    background-color: $c-white;
-    border: 1px solid #ccc;
-    border-radius: 22px;
-    color: $c-black;
-    width: 100%;
-  }
-
   &__home {
     background-image: url(./assets/images/Banner.png);
+    background-position: top center;
     background-color: $c-bg-color;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 550px;
     display: flex;
+
+    @include media("<tablet") {
+      background-position: 76% 50%;
+    }
   }
 
   &__heading {
@@ -81,16 +21,27 @@
 
   &__text {
     max-width: 520px;
+
+    @include media("<phone") {
+      text-align: center;
+    }
   }
 
   &__suptitle {
     font-family: $f-work-sans-bold;
     font-size: $fs-caption + px;
     text-transform: uppercase;
+    line-height: $lh-sub + px;
     letter-spacing: 0.16em;
     color: $c-secondary;
     margin-bottom: 10px;
     font-weight: bold;
+
+    @include media("<phone") {
+      font-size: $fs-title-sm + px;
+      font-size: $fs-small + px;
+      line-height: $lh-sm + px;
+    }
   }
 
   &__title {
@@ -99,6 +50,11 @@
     line-height: $lh-big + px;
     margin-bottom: 30px;
     color: $c-primary;
+
+    @include media("<phone") {
+      font-size: $fs-title-sm + px;
+      line-height: $lh-name + px;
+    }
   }
 
   &__goals {
@@ -110,5 +66,9 @@
     bottom: -50px;
     z-index: 1;
     right: 0;
+
+    @include media("<desktop") {
+      display: none;
+    }
   }
 }

@@ -1,5 +1,4 @@
 .c-section-great-place {
-  min-width: 625px;
   text-align: center;
 
   &__description {
@@ -15,6 +14,10 @@
     color: $c-secondary;
     margin-bottom: 10px;
     font-weight: bold;
+
+    @include media("<phone") {
+      font-size: $fs-sm + px;
+    }
   }
 
   &__title {
@@ -23,6 +26,10 @@
     line-height: $lh-title + px;
     margin-bottom: 15px;
     color: $c-primary;
+
+    @include media("<phone") {
+      font-size: $fs-sm-title + px;
+    }
   }
 
   &__text {

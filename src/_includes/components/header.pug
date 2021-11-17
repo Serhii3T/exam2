@@ -1,0 +1,51 @@
+mixin header()
+  .c-header#home
+    .c-header__wrapper
+      .c-header__contact.c-container
+        .c-header__logo
+          +logo()
+        .c-header__info
+          .c-header__phone.c-header__item
+            +item-header-info({
+              name: 'Emergency',
+              number: '(237) 681-812-255',
+              style: 'background-image: url(./assets/icon/common/svg/phone.svg);'
+            })
+          .c-header__hour.c-header__item
+            +item-header-info({
+              name: 'Work Hour',
+              number: '09:00 - 20:00 Everyday',
+              style: 'background-image: url(./assets/icon/common/svg/time.svg);'
+            })
+          .c-header__location.c-header__item
+            +item-header-info({
+              name: 'location',
+              number: '0123 Some Place',
+              style: 'background-image: url(./assets/icon/common/svg/local.svg);'
+            })
+      .c-header__navigation
+        .c-header__navigation__wrapper.c-container
+          +logo()
+          .c-header__nav
+            +navigation()
+            +link({
+              href: '#',
+              text: 'Appointment',
+              linkMode: true,
+              type: 'submit'
+            })
+          .c-header-block
+            .c-header__search
+              form(action='#' method='get')#form-search.c-header__search--input
+                button.btn-search
+                  +icon({
+                    svgLink: 'search',
+                  })
+                input(type="text" name="search").c-header__input-search
+            +link({
+              href: '#',
+              text: 'Appointment',
+              linkMode: true,
+              type: 'submit'
+            })
+            +burger-menu()

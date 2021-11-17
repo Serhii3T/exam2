@@ -1,7 +1,6 @@
 mixin navigation()
   nav.c-navigation
     ul.c-navigation__list#myTopnav
-      button.c-navigation__btn
       li.c-navigation__item
         +link({
           href: '#home',
@@ -32,11 +31,3 @@ mixin navigation()
           href: '#contact',
           text: 'Contact',
         })
-      li.c-navigation__item 
-        +link({
-          href: 'javascript:void(0);',
-          text: '',
-          burgerStyle: true,
-          onclick: 'myFunction()'
-        })
-    +burger-menu()
