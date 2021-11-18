@@ -1,0 +1,96 @@
+mixin section-our-services()
+  .section-our-services
+    .section-our-services__wrapper.c-container 
+      p.section-our-services__suptitle Care you can believe in
+      h2.section-our-services__title Our Services
+      .section-our-services__tab-services
+        .section-our-services__navigate
+          .section-our-services__tab
+            ul.section-our-services__list 
+              li(data-id="1").section-our-services__item.active
+                .section-our-services__svg
+                  +icon({
+                    svgLink: 'medical',
+                  })
+                p.section-our-services__name-tab Free Checkup
+              li(data-id="2").section-our-services__item
+                .section-our-services__svg
+                  +icon({
+                    svgLink: 'heart-plus',
+                  })
+                p.section-our-services__name-tab Cardiogram
+              li(data-id="3").section-our-services__item
+                .section-our-services__svg
+                  +icon({
+                    svgLink: 'med-chest',
+                  })
+                p.section-our-services__name-tab Dna Testing
+              li(data-id="4").section-our-services__item
+                .section-our-services__svg
+                  +icon({
+                    svgLink: 'dropper',
+                  })
+                p.section-our-services__name-tab Blood Bank
+              li(data-id="5").section-our-services__item.hidden
+                .section-our-services__svg
+                  +icon({
+                    svgLink: 'med-chest',
+                  })
+                p.section-our-services__name-tab Dermalogy
+              li(data-id="6").section-our-services__item.hidden
+                .section-our-services__svg
+                  +icon({
+                    svgLink: 'med-chest',
+                  })
+                p.section-our-services__name-tab Orthopedic
+            button.section-our-services__btn-tab View All
+        .section-our-services__content
+          .section-our-services__content__item.data-id-1.active
+            .section-our-services__info
+              h2.section-our-services__heading A passion for putting patients first.
+              ul.section-our-services__list-goals
+                li.section-our-services__item-goals A Passion for Healing
+                li.section-our-services__item-goals All our best
+                li.section-our-services__item-goals A Legacy of Excellence
+                li.section-our-services__item-goals 5-Star Care
+                li.section-our-services__item-goals Believe in Us
+                li.section-our-services__item-goals Always Caring
+              p.section-our-services__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. Quisque placerat scelerisque tortor ornare ornare Convallis felis vitae tortor augue. Velit nascetur proin massa in. Consequat faucibus porttitor enim et.
+              br
+              p.section-our-services__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque. Convallis felis vitae tortor augue. Velit nascetur proin massa in.
+            .section-our-services__image
+              .section-our-services__picture-1
+                +image({
+                  src: './assets/images/tab1.jpg',
+                  alt: 'woman men'
+                })
+              .section-our-services__picture-2
+                +image({
+                  src: './assets/images/tab2.jpg',
+                  alt: '3-women'
+                })
+          .section-our-services__content__item.data-id-2
+            .section-our-services__info
+              h2.section-our-services__heading A passion for putting patients first.
+              p.section-our-services__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. Quisque placerat scelerisque tortor ornare ornare Convallis felis vitae tortor augue. Velit nascetur proin massa in. Consequat faucibus porttitor enim et.
+              br
+              p.section-our-services__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque. Convallis felis vitae tortor augue. Velit nascetur proin massa in.
+            .section-our-services__image
+              .section-our-services__picture-1
+                +image({
+                  src: './assets/images/tab1.jpg',
+                  alt: 'woman men'
+                })
+              .section-our-services__picture-2
+                +image({
+                  src: './assets/images/tab2.jpg',
+                  alt: '3-women'
+                })
+          .section-our-services__content__item.data-id-3
+            p.popa 2300532465
+          .section-our-services__content__item.data-id-4
+            p.popa 2300532465234
+          .section-our-services__content__item.data-id-5
+            p.popa 230053246526457247
+          .section-our-services__content__item.data-id-6
+            p.popa 230053246542582482569835693259

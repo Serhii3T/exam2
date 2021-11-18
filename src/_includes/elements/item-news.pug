@@ -1,0 +1,31 @@
+mixin item-news(args)
+ - let srcImg = args.srcImg || 'default img';
+ - let dateAuthor = args.dateAuthor || '';
+ - let article = args.article || '';
+ - let countSee = args.countSee || '';
+ - let countLike = args.countLike || '';
+
+  a.e-item-news 
+    .e-item-news__wrapper
+      .e-item-news__img 
+        +image({
+          src: srcImg,
+          alt: 'event'
+        })
+      .e-item-news__info 
+        .e-item-news__heading
+          p.e-item-news__date-author=dateAuthor
+          p.e-item-news__article=article
+        .e-item-news__svg 
+          .e-item-news__see 
+            +icon({
+              svgLink: 'see'
+            })
+          .e-item-news__text
+            span.e-item-news__count=countSee
+          .e-item-news__like
+            +icon({
+              svgLink: 'like'
+            })
+          .e-item-news__text
+            span.e-item-news__count=countLike

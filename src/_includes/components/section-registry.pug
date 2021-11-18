@@ -1,0 +1,46 @@
+mixin section-registry()
+  .c-section-registry
+    .c-section-registry__wrapper.c-container
+      .c-section-registry__info 
+        h2.c-section-registry__title Book an Appointment
+        p.c-section-registry__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. Convallis felis vitae tortor augue. Velit nascetur proin massa in. Consequat faucibus porttitor enim et.
+      .c-section-registry__regist
+        form(action="#", method="post").c-section-registry__form
+          .c-section-registry__base
+            .c-section-registry__base-left
+              input#name(type="text" placeholder='Name' name="name").c-section-registry__name
+              input#email(type="email", name="email", placeholder='Email').c-section-registry__email
+              select#date(name="date").c-section-registry__date
+                option(value="") Date
+              select#doctor(name="doctor").c-section-registry__doctor
+                option(value="") Doctors 
+                option(value="ukushuzaruku") Ukushu Zaruku
+                option(value="agonbjsovich") Agonb Jsovich
+                option(value="vyrvuzub") Vyrvu Zub
+                option(value="ukuzhuzanogu") Ukuzhu Zanogu
+                option(value="pivopejzemljavaljajsja") Pivopej Zemljavaljajsja
+            .c-section-registry__base-right
+              select#gender(name="gender").c-section-registry__gender
+                option(value="") Gender
+                option(value="Male") Male
+                option(value="Female") Female
+              input#phone(type="tel", name="phone", placeholder='Phone').c-section-registry__phone
+              select#time(name="time").c-section-registry__time
+                option(value="") Time
+              select#department(name="department").c-section-registry__department
+                option(value="") Department
+                option(value="cardiovascular") Cardiovascular
+                option(value="chiropractor") Chiropractor
+                option(value="dentistry") Dentistry
+                option(value="dermatology") Dermatology
+                option(value="gastroenterology") Gastroenterology
+                option(value="gynaecology") Gynaecology
+                option(value="neurology") Neurology
+                option(value="oncology") Oncology
+                option(value="ophthalmology") Ophthalmology
+                option(value="otorhinolaryngology") Otorhinolaryngology
+                option(value="pulmonology") Pulmonology
+                option(value="therapy") Therapy
+                option(value="urology") Urology
+          textarea#message(name="message" placeholder='Message').c-section-registry__textarea
+          button#sbmt(type="submit").c-section-registry__btn submit
