@@ -1,0 +1,11 @@
+mixin section-map() 
+  .c-section-map
+    .c-section-map__wrapper.c-container 
+      .c-section-map__map-control#style-selector-control
+        select.c-section-map__selector-control#style-selector
+          option(value="default" selected="selected") Default
+          option(value="silver") Silver
+          option(value="night") Night mode
+          option(value="retro") Retro
+          option(value="hiding") Hide features
+      .c-section-map__map#map
